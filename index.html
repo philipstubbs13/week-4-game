@@ -20,7 +20,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="jumbotron bg-primary">
+				<div class="jumbotron bg-primary text-white">
 				  <h1>CrystalCollectors 1.0</h1>
 				  <p>This is the classic CrystalCollectors game. In this game, you'll need to collect crystals to reach the target score without going over.</p>
 				  <p>Wins: <span class="win-counter"></span></p>
@@ -29,5 +29,38 @@
 			</div>
 		</div>
 
+		<div class="row">
+			<!--Game Instructions-->
+			<div class="col-md-5">
+				<h2>How to play</h2>
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+
+			<div class="col-md-7">
+				<div class="row">
+					<!--Target number that is generated at the start of the game.-->
+					<div class="col-md-6">
+						<h2>Target number</h2>
+						<p>39</p>
+					</div>
+
+					<!--where wins and losses will be tracked-->
+					<div class="col-md-6">
+						<h2>Wins and Losses</h2>
+						<div>
+						Wins: 0	
+						</div>
+			
+						<div>
+						Losses: 0
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 </body>
 </html>
