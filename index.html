@@ -5,19 +5,19 @@
 	<title>CrystalCollectors</title>
 
 	<!--Reset css file-->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
 
 	<!--Bootstrap CDN-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	
 	<!--Bootswatch-->
-	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
 	
 	<!--JQuery-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<style>
-		body {
+		/*body {
 			background-image: url('assets/images/stonehaven.png');
 		}
 	</style>
@@ -54,11 +54,13 @@
 				  	<h2>How to play</h2>
 				  </div>
 				  <div class="card-body" id="how-to-play-steps">
-					<p>You will be given a random number at the start of the game.</p>
-					<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-					<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-					<p>The value of each crystal is hidden from you until you click on it.</p>
-					<p>Each time when the game starts, the game will change the values of each crystal.</p>
+				  	<ul>
+						<li>At the start of the game, you are given a random number. This number is the <b>Target number</b> that you need to reach to win.</li>
+						<li>To reach the <b>Target number</b>, click a crystal, which adds a specific number of points to <b>Your number</b>.</li>
+						<li>To win the game, <b>Your number</b> must match the <b>Target number</b>. If you go over the <b>Target number</b>,  you lose.</li>
+						<li>The value of each crystal is hidden from you until you click it.</li>
+						<li>Each time you start a new game, the game will change the values of each crystal and the value of the <b>Target number</b>. </li>
+					</ul>
 				  </div>
 				</div>
 			</div>
@@ -79,26 +81,29 @@
 					<div class="col-md-6">
 						<div class="card">
 						  <div class="card-header bg-primary">
-						  	<h2>Your score</h2>
+						  	<h2>Your number</h2>
 						  </div>
-						  <div class="card-body" id="user-score">
+						  <div class="card-body" id="user-number">
 						  </div>
 						</div>
 					</div>
 				</div>
 
 				<div class="row pb-4">
-					<div class="col-md-12">
-							<div class="card mb-4">
+					<div class="col-md-12" id="select-crystal-gameover">
+							<div class="card mb-4" id="select-crystal">
 							  <div class="card-header bg-primary">
 							  	<h2>Select a crystal</h2>
 							  </div>
-							  <div class="card-body" id="select-crystal">
-								<img src="assets/images/blue-crystal.png" alt="blue crystal" width="110px" height="100px" class="pr-3">
-								<img src="assets/images/orange-crystal.png" alt="orange crystal" width="110px" height="100px" class="pr-3">
-								<img src="assets/images/pink-crystal.png" alt="pink crystal" width="110px" height="100px" class="pr-3">
-								<img src="assets/images/purple-crystal.png" alt="purple crystal" width="110px" height="100px">
+							  <div class="card-body" id="select-crystal_buttons">
+								<img src="assets/images/blue-crystal.png" alt="blue crystal" width="110px" height="100px" class="pr-3" id="blue-crystal">
+								<img src="assets/images/orange-crystal.png" alt="orange crystal" width="110px" height="100px" class="pr-3" id="orange-crystal">
+								<img src="assets/images/pink-crystal.png" alt="pink crystal" width="110px" height="100px" class="pr-3" id="pink-crystal">
+								<img src="assets/images/purple-crystal.png" alt="purple crystal" width="110px" height="100px" id="purple-crystal">
 							  </div>
+							</div>
+
+							<div id="game-over">
 							</div>
 					</div>
 				</div>
