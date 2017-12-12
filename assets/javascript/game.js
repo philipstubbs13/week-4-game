@@ -29,12 +29,10 @@ var purpleCrystalBtn = "<img id='purple-crystal' width= '110px' height='100px' s
 
 
 //Functions
-
 //start game function
 function start () {
 	//Randomly generate number between 19 and 120.
 	targetNumber = Math.floor(Math.random() * ((120-19) + 1) + 19);
-	console.log(targetNumber);
 
 	//Display random number in HTML when game is started.
 	$("#target-number-heading").html("<h2>" + "Target number" + "</h2>").addClass("bg-primary");
@@ -49,16 +47,12 @@ function start () {
 
 	//Generate random number from 1 to 12 for each crystal.
  	blueCrystalNumber = Math.floor(Math.random() * ((12-1) + 1) + 1);
- 	console.log(blueCrystalNumber);
 
  	orangeCrystalNumber = Math.floor(Math.random() * ((12-1) + 1) + 1);
- 	console.log(orangeCrystalNumber);
 
  	pinkCrystalNumber = Math.floor(Math.random() * ((12-1) + 1) + 1);
- 	console.log(pinkCrystalNumber);
 
  	purpleCrystalNumber = Math.floor(Math.random() * ((12-1) + 1) + 1);
- 	console.log(purpleCrystalNumber);
 }
 
 //Function to add random crystal numbers to user's total
@@ -68,7 +62,6 @@ function addNumbers() {
 	$("#blue-crystal").on("click", function() {
 		if (userNumber < targetNumber) {
 			userNumber += blueCrystalNumber;
-			console.log(userNumber);
 			$("#user-number").html("<h4>" + userNumber + "</h4>");
 			checkScore();
 		}
@@ -78,7 +71,6 @@ function addNumbers() {
 	$("#orange-crystal").on("click", function() {
 		if (userNumber < targetNumber) {
 			userNumber += orangeCrystalNumber;
-			console.log(userNumber);
 			$("#user-number").html("<h4>" + userNumber + "</h4>");
 			checkScore();
 		}
@@ -88,7 +80,6 @@ function addNumbers() {
 	$("#pink-crystal").on("click", function() {
 		if (userNumber < targetNumber) {
 			userNumber += pinkCrystalNumber;
-			console.log(userNumber);
 			$("#user-number").html("<h4>" + userNumber + "</h4>");
 			checkScore();
 		}
@@ -98,7 +89,6 @@ function addNumbers() {
 	$("#purple-crystal").on("click", function() {
 		if (userNumber < targetNumber) {
 			userNumber += purpleCrystalNumber;
-			console.log(userNumber);
 			$("#user-number").html("<h4>" + userNumber + "</h4>");
 			checkScore();
 		}	
