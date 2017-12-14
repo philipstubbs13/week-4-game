@@ -23,8 +23,24 @@ var userWon;
 
 //Functions - reusable blocks of code
 
+//Append start button
+$("#start-button-div").append("<button id='start-button'>" + "Start" + "</button>");
+$("#click-to-start").append("<h2>" + "Are you ready? " + "</h2>");
+//Add styling to start button.
+$("#start-button").addClass("round btn btn-primary btn-block");
+//Hide win-loss-div
+$("#win-loss-div").hide();
+//When start button is clicked, start game.
+$("#start-button").on("click", function() {
+	start();
+});
+
+
 //start game function
 function start () {
+	//Hide the div with start button...
+	$("#start-div").hide();
+
 	//Hide the win-loss-div when game starts or is reset. Only show this div when game is over (user won or lost).
 	$("#win-loss-div").hide();
 
@@ -169,6 +185,5 @@ function resetGame () {
 }
 
 //Execute code
-start();
 addNumbers();
 

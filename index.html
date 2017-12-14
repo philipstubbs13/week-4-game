@@ -33,8 +33,15 @@
 		</div>
 
 		<div class="row">
-			<!--Game Instructions-->
 			<div class="col-xs-12 col-sm-12 col-md-5">
+				<!--Div to hold start button-->
+				<div class="card mb-4" id="start-div">
+				  <div class="card-header bg-primary" id="click-to-start">
+				  </div>
+				  <div class="card-body" id="start-button-div">
+				  </div>
+				</div>
+
 				<!--Hide this div. Don't show until game is over (user won or lost)-->
 				<div class="card mb-4" id="win-loss-div">
 				  <!--Use jQuery to update win text or loss text-->
@@ -59,6 +66,7 @@
 
 				<div class="card mb-4">
 				  <div class="card-header bg-primary" id="how-to-play">
+				  	<!--Game Instructions-->
 				  	<h2>How to play</h2>
 				  </div>
 				  <div class="card-body" id="how-to-play-steps">
@@ -78,7 +86,8 @@
 					<div class="col-md-6">
 							<!--Target number that is generated at the start of the game.-->
 							<div class="card mb-4">
-							  <div class="card-header" id="target-number-heading">
+							  <div class="card-header bg-primary" id="target-number-heading">
+							  	<h2>Target number</h2>
 							  </div>
 							  <div class="card-body" id="target-number">
 							  </div>
