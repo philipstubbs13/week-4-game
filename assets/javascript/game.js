@@ -25,6 +25,9 @@ var userWon;
 
 //start game function
 function start () {
+	//Hide the win-loss-div when game starts or is reset. Only show this div when game is over (user won or lost).
+	$("#win-loss-div").hide();
+
 	//Randomly generate number between 19 and 120.
 	targetNumber = Math.floor(Math.random() * ((120-19) + 1) + 19);
 
@@ -122,9 +125,17 @@ function checkScore(){
 function gameOver() {
 	//If userWon is true...
  	if (userWon) {
- 		//Append button to play again.
+ 		//Show win-loss-div to display "You win!" text to the user...
+ 		$("#win-loss-div").show();
+ 		//Show win image to user..
+ 		$("#win-loss-image").html("<img id='win-image' src=" + "'assets/images/win-image.jpg'" + " max-width='100%'" + " height='auto'>");
+ 		//Add img-fluid class to win-image to make image responsive.
+ 		$("#win-image").addClass("img-fluid");
+ 		//Append reset button to play again.
  		$("#reset-button-div").append("<button id='reset-button'>" + "Click to play again" + "</button>").append("<h2 id='win-loss-text'>" + "You win!!" + "</h2>");
+ 		//Add styling to reset button.
  		$("#reset-button").addClass("round btn btn-secondary btn-block");
+ 		//When reset button is clicked, reset game.
  		$("#reset-button").on("click", function() {
  			resetGame();
  		});
@@ -132,9 +143,17 @@ function gameOver() {
 
  	else {
  		//If userWon is false...
- 		//Append button to play again.
+ 		//Show win-loss-div to display "You lost" text to the user...
+ 		$("#win-loss-div").show();
+ 		//Show loss image to user..
+ 		$("#win-loss-image").html("<img id='loss-image' src=" + "'assets/images/lose-image.jpg'" + " max-width='100%'" + " height='auto'>");
+ 		//Add img-fluid class to loss-image to make image responsive.
+ 		$("#loss-image").addClass("img-fluid");
+ 		//Append reset button to play again.
  		$("#reset-button-div").append("<button id='reset-button'>" + "Click to play again" + "</button>").append("<h2 id='win-loss-text'>" + "You went over the target number. Better luck next time." + "</h2>");
+ 		//Add styling to reset button.
  		$("#reset-button").addClass("round btn btn-secondary btn-block");
+ 		//When reset button is clicked, reset game.
  		$("#reset-button").on("click", function() {
  			resetGame();
  		});

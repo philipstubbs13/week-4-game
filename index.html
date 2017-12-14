@@ -27,9 +27,6 @@
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<div class="jumbotron bg-primary text-white">
 				  <h1>CrystalCollectors 1.0</h1>
-				  <!--Div for reset button. Use jQuery to only display button when game is over (userNumber equals targetNumber or userNumber > targetNumber)-->
-				  <div id="reset-button-div">
-				  </div>
 				</div>
 			</div>
 
@@ -38,6 +35,17 @@
 		<div class="row">
 			<!--Game Instructions-->
 			<div class="col-xs-12 col-sm-12 col-md-5">
+				<!--Hide this div. Don't show until game is over (user won or lost)-->
+				<div class="card mb-4" id="win-loss-div">
+				  <!--Use jQuery to update win text or loss text-->
+				  <!--Div for reset button. Use jQuery to only display button when game is over (userNumber equals targetNumber or userNumber > targetNumber)-->
+				  <div class="card-header bg-primary" id="reset-button-div">
+				  </div>
+				  <!--When user wins, add win image to win-loss-image div. When user loses, add loss image to win-loss-image div-->
+				  <div class="card-body" id="win-loss-image">
+				  </div>
+				</div>
+
 				<div class="card mb-4">
 				  <!--Use jQuery to update wins (userNumber = targetNumber) and update losses (userNumber  > targetNumber)-->
 				  <div class="card-header bg-primary" id="wins-losses-heading">
