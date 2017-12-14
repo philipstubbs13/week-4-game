@@ -21,13 +21,6 @@ var losses = 0;
 //Create a variable to determine if user won or lost.
 var userWon;
 
-//Create variables for crystal buttons/images.
-var blueCrystalBtn = "<img id='blue-crystal' width= '110px' height='100px' src='../week-4-game/assets/images/blue-crystal.png'/>";
-var orangeCrystalBtn = "<img id='orange-crystal' width= '110px' height='100px' src='../week-4-game/assets/images/orange-crystal.png'/>";
-var pinkCrystalBtn = "<img id='pink-crystal' width= '110px' height='100px' src='../week-4-game/assets/images/pink-crystal.png'/>";
-var purpleCrystalBtn = "<img id='purple-crystal' width= '110px' height='100px' src='../week-4-game/assets/images/purple-crystal.png'/>";
-
-
 //Functions - reusable blocks of code
 
 //start game function
