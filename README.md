@@ -1,5 +1,11 @@
 # Crystal Collectors Game
 
+## Live
+<a href="https://philipstubbs13.github.io/week-4-game/index.html" target="_blank">https://philipstubbs13.github.io/week-4-game/index.html</a>
+
+## Screenshot
+<img src="../../../coding-portfolio/assets/images/crystal.PNG" alt="Crystal Collectors game user interface" width="400px" height="320px">
+
 ## Technologies used to create game
 
 <li>HTML5</li>
