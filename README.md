@@ -2,11 +2,11 @@
 
 ## Technologies used to create game
 
-* HTML5
-* CSS
-* Bootstrap 4.0.0-beta
-* Javascript
-* JQuery
+<li>HTML5</li>
+<li>CSS</li>
+<li>Bootstrap 4.0.0-beta</li>
+<li>Javascript</li>
+<li>JQuery</li>
 
 ## How to play
  	
